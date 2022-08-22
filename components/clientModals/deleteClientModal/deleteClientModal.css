@@ -1,0 +1,11 @@
+
+.deleteModal__header{
+    position: relative;
+    justify-content: center;
+}
+
+.deleteModal__header span{
+    position: absolute;
+    right: 30px;
+    top: 15px;
+}
