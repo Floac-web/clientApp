@@ -1,4 +1,12 @@
-
+@import "./plugins/modal/modal.css";
+@import "./components/table/table.css";
+@import "./components/header/header.css";
+@import "./components/header/headerSearch/searchClient.css";
+@import "./components/clientModals/clientModal.css";
+@import "./components/clientModals/addClientModal/addClientModal.css";
+@import "./components/clientModals/addContact/addContact.css";
+@import "./components/clientModals/changeClientDataModal/changeClientDataModal.css";
+@import "./components/clientModals/deleteClientModal/deleteClientModal.css";
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
 *,*::after,*::before{
