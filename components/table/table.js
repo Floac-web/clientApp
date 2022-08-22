@@ -1,4 +1,4 @@
-import { addUserSvg, otherIconSvg, phoneIconSvg, mailIconSvg, vkIconSvg, fbIconSvg, changeClientDataSvg, deleteClientSvg } from "../../img/svg";
+import { addUserSvg, otherIconSvg, phoneIconSvg, mailIconSvg, vkIconSvg, fbIconSvg, changeClientDataSvg, deleteClientSvg } from "../../img/svg.js";
 import { changeClientDataModal } from "../clientModals/changeClientDataModal/changeClientDataModal.js";
 import { addClientModal } from "../clientModals/addClientModal/addClientModal.js";
 import "./table.css"

@@ -1,4 +1,4 @@
-import { deleteContactSvg, addContactSvg } from "../../../img/svg";
+import { deleteContactSvg, addContactSvg } from "../../../img/svg.js";
 import "./addContact.css"
 
 

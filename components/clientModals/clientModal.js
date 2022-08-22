@@ -1,5 +1,5 @@
 
-import { closeModalSvg } from "../../img/svg"
+import { closeModalSvg } from "../../img/svg.js"
 import {addContactForm} from "./addContact/addContact.js"
 import { isInputValid } from "../../utils/isInputValidUtil.js"
 

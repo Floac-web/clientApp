@@ -1,9 +1,9 @@
 import { DATA__BASE__CLIENT__URL } from "../../../constants/firebaseConstants.js"
-import { closeModalSvg, addContactSvg } from "../../../img/svg.js"
+
 import { $modal } from "../../../plugins/modal/modal.js"
 import { firebaseSetItem } from "../../../utils/firebaseUtils/firebaseUtils.js"
-import { addContactForm } from "../addContact/addContact.js"
-import { createClientModalHeader, createClientModalForm, createClientModalFooter} from "../clientModal.js"
+
+import { createClientModalHeader, createClientModalForm} from "../clientModal.js"
 import "../clientModal.css"
 import "./addClientModal.css"
 import { createFindItem } from "../../header/headerSearch/searchClient.js"
