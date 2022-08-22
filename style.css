@@ -1,5 +1,7 @@
 @import "./plugins/modal/modal.css";
 @import "./components/table/table.css";
+@import "./utils/preloader/preloader.css";
+
 @import "./components/header/header.css";
 @import "./components/header/headerSearch/searchClient.css";
 @import "./components/clientModals/clientModal.css";
