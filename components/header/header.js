@@ -1,6 +1,6 @@
 
 
-import "./header.css"
+//import "./header.css"
 
 export function createHeader(){
     const header = document.createElement("header")

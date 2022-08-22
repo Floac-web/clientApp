@@ -3,7 +3,7 @@ import { $modal } from "../../../plugins/modal/modal.js";
 import { firebaseDeleteItem } from "../../../utils/firebaseUtils/firebaseUtils.js";
 import { createClientModalFooter, createClientModalHeader, createClientModalText } from "../clientModal.js";
 
-import "./deleteClientModal.css"
+//import "./deleteClientModal.css"
 
 export function deleteClientModal(clientServeId, deleteClient){
     const deleteBtnName = "Видалити";

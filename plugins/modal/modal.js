@@ -1,6 +1,6 @@
 
 
-import "./modal.css"
+//import "./modal.css"
 
 
 

@@ -1,5 +1,5 @@
 
-import "./searchClient.css"
+//import "./searchClient.css"
 
 
 export function createFindItem(client){

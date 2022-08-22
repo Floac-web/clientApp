@@ -4,8 +4,8 @@ import { $modal } from "../../../plugins/modal/modal.js"
 import { firebaseSetItem } from "../../../utils/firebaseUtils/firebaseUtils.js"
 
 import { createClientModalHeader, createClientModalForm} from "../clientModal.js"
-import "../clientModal.css"
-import "./addClientModal.css"
+//import "../clientModal.css"
+//import "./addClientModal.css"
 import { createFindItem } from "../../header/headerSearch/searchClient.js"
 
 

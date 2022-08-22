@@ -1,5 +1,5 @@
 import { deleteContactSvg, addContactSvg } from "../../../img/svg.js";
-import "./addContact.css"
+//import "./addContact.css"
 
 
 function renderContactTypes(TypeList){

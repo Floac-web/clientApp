@@ -1,7 +1,7 @@
 import { addUserSvg, otherIconSvg, phoneIconSvg, mailIconSvg, vkIconSvg, fbIconSvg, changeClientDataSvg, deleteClientSvg } from "../../img/svg.js";
 import { changeClientDataModal } from "../clientModals/changeClientDataModal/changeClientDataModal.js";
 import { addClientModal } from "../clientModals/addClientModal/addClientModal.js";
-import "./table.css"
+//import "./table.css"
 import { deleteClientModal } from "../clientModals/deleteClientModal/deleteClientModal.js";
 import { createPreloader } from "../../utils/preloader/preloder.js";
 

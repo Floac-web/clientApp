@@ -1,7 +1,7 @@
 
 
 
-import "./preloader.css"
+//import "./preloader.css"
 
 export function createPreloader(){
     const preloader = document.createElement("tr")
