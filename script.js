@@ -1,12 +1,12 @@
 
-import { createHeader } from "./components/header/header";
-import { createClientsTable } from "./components/table/table";
+import { createHeader } from "./components/header/header.js";
+import { createClientsTable } from "./components/table/table.js";
 
-import { firebaseGetItem,  } from "./utils/firebaseUtils/firebaseUtils";
-import { DATA__BASE__CLIENT__URL } from "./constants/firebaseConstants";
+import { firebaseGetItem,  } from "./utils/firebaseUtils/firebaseUtils.js";
+import { DATA__BASE__CLIENT__URL } from "./constants/firebaseConstants.js";
 
-import { sortTable } from "./components/table/sortTable";
-import { searchClient } from "./components/header/headerSearch/searchClient";
+import { sortTable } from "./components/table/sortTable.js";
+import { searchClient } from "./components/header/headerSearch/searchClient.js";
 
 
 const clientTable = createClientsTable()

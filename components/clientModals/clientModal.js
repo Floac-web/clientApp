@@ -1,7 +1,7 @@
 
 import { closeModalSvg } from "../../img/svg"
 import {addContactForm} from "./addContact/addContact.js"
-import { isInputValid } from "../../utils/isInputValidUtil"
+import { isInputValid } from "../../utils/isInputValidUtil.js"
 
 
 

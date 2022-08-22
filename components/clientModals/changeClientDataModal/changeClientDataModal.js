@@ -1,7 +1,7 @@
-import { $modal } from "../../../plugins/modal/modal";
-import { firebasePathItem, firebaseDeleteItem } from "../../../utils/firebaseUtils/firebaseUtils";
-import { createClientModalHeader, createClientModalForm } from "../clientModal";
-import { DATA__BASE__URL, DATA__BASE__CLIENT } from "../../../constants/firebaseConstants";
+import { $modal } from "../../../plugins/modal/modal.js";
+import { firebasePathItem, firebaseDeleteItem } from "../../../utils/firebaseUtils/firebaseUtils.js";
+import { createClientModalHeader, createClientModalForm } from "../clientModal.js";
+import { DATA__BASE__URL, DATA__BASE__CLIENT } from "../../../constants/firebaseConstants.js";
 
 
 export function changeClientDataModal(client, clientChangedLine, setCutentClientData, deleteClient){

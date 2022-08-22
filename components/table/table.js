@@ -1,10 +1,10 @@
 import { addUserSvg, otherIconSvg, phoneIconSvg, mailIconSvg, vkIconSvg, fbIconSvg, changeClientDataSvg, deleteClientSvg } from "../../img/svg";
-import { changeClientDataModal } from "../clientModals/changeClientDataModal/changeClientDataModal";
-import { addClientModal } from "../clientModals/addClientModal/addClientModal";
+import { changeClientDataModal } from "../clientModals/changeClientDataModal/changeClientDataModal.js";
+import { addClientModal } from "../clientModals/addClientModal/addClientModal.js";
 import "./table.css"
-import { deleteClientModal } from "../clientModals/deleteClientModal/deleteClientModal";
-import { createPreloader } from "../../utils/preloader/preloder";
-import { createFindItem } from "../header/headerSearch/searchClient";
+import { deleteClientModal } from "../clientModals/deleteClientModal/deleteClientModal.js";
+import { createPreloader } from "../../utils/preloader/preloder.js";
+
 
 
 

@@ -1,7 +1,7 @@
-import { DATA__BASE__URL, DATA__BASE__CLIENT } from "../../../constants/firebaseConstants";
-import { $modal } from "../../../plugins/modal/modal";
-import { firebaseDeleteItem } from "../../../utils/firebaseUtils/firebaseUtils";
-import { createClientModalFooter, createClientModalHeader, createClientModalText } from "../clientModal";
+import { DATA__BASE__URL, DATA__BASE__CLIENT } from "../../../constants/firebaseConstants.js";
+import { $modal } from "../../../plugins/modal/modal.js";
+import { firebaseDeleteItem } from "../../../utils/firebaseUtils/firebaseUtils.js";
+import { createClientModalFooter, createClientModalHeader, createClientModalText } from "../clientModal.js";
 
 import "./deleteClientModal.css"
 
