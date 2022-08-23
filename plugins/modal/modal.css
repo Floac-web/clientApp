@@ -28,7 +28,7 @@
 
     background: rgba(0, 0, 0, 0.5);
     
-    transition: opacity .1s linear;
+    transition: opacity .2s linear;
 }
 
 .modal__window{
@@ -36,14 +36,15 @@
     position: relative;
     margin: 0 auto;
 
-    opacity: 0;
 
     width: 95%;
     max-width: 450px;
 
+    transform: translateY(-100%);
+
     background: rgb(255, 255, 255);
 
-    transition: all .1s linear;
+    transition: all .2s linear;
     
 }
 

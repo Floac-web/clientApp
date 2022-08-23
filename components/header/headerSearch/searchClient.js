@@ -4,6 +4,7 @@
 
 export function createFindItem(client){
     const findList = document.querySelector(".header__find-list")
+    
     const findItem = document.createElement("li")
     const findLink = document.createElement("a")
     
@@ -71,7 +72,7 @@ export function searchClient(clienttListObj) {
                     findList.classList.remove("hide")
                     link.classList.remove("hide")
 
-                    const str = link.innerText.toLowerCase();
+                    const str = link.innerText;
                     const pos = str.search(value)
                     const len = value.length
                     link.innerHTML = insertMark(str,pos,len)
@@ -83,9 +84,9 @@ export function searchClient(clienttListObj) {
 
     })
 
-    findInput.addEventListener("focusout", () => {
-        setTimeout(() => findList.classList.add("hide"),1000)
-    })
+    // findInput.addEventListener("focusout", () => {
+    //     setTimeout(() => findList.classList.add("hide"),1000)
+    // })
 
 
 

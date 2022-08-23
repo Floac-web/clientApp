@@ -13,7 +13,7 @@
     position: relative;
 }
 
-.contact__nameBtn{
+.btn.contact__nameBtn{
     text-align: left;
     font-weight: 400;
     font-size: 12px;
@@ -50,7 +50,7 @@
     transform: rotate(-225deg);
 }
 
-.contact__list{
+.list.contact__list{
     cursor: pointer;
     border: 1px solid var(--color-gray-suit10);
     border-top: none;
@@ -67,7 +67,7 @@
     transition: opacity .1s linear, visibility .1s linear;
 }
 
-.contact__list-active{
+.contact__list.contact__list-active{
     opacity: 1;
     visibility: visible;
 }
@@ -93,6 +93,8 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 19px;
+    border-top: 1px solid var(--color-gray-suit10);
+    border-bottom: 1px solid var(--color-gray-suit10);
 }
 
 .contact__input::placeholder{
@@ -101,7 +103,7 @@
     line-height: 19px;
 }
 
-.contact__cancelBtn{
+.btn.contact__cancelBtn{
     position: relative;
     height: 37px;
     width: 27px;
@@ -137,7 +139,7 @@
 }
 
 
-.addContact__btn{
+.btn.addContact__btn{
     margin: 0 auto;
     padding: 8px;
     display: flex;
@@ -152,7 +154,7 @@
 .addContact__btn-svg svg{
     fill: var(--color-emerald);
     background-color: var(--color-gray-suit3);
-    border-radius: 19px;
+    border-radius: 10px;
 
     transition: all .3s linear;
 }

@@ -80,12 +80,12 @@ export function $modal(modalHeader,modalBody,modalFooter){
         },
         hide(){
             _modal.classList.remove("active")
-            setTimeout(()=>{_modal.classList.add("hide")}, 100)
+            setTimeout(()=>{_modal.classList.add("hide")}, 300)
             setTimeout(() => {
                 _modal.parentNode.removeChild(_modal);
                 _modal.removeEventListener("click", listener);
                 isDestroyed = true;
-            },350)
+            },2000)
         },
         modalDom: _modal,
     }

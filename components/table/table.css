@@ -181,7 +181,7 @@ tbody td button{
     justify-content: center;
 }
 
-.clients__btn{
+.btn.clients__btn{
     border: 1px solid var(--color-emerald);
     color: var(--color-emerald);
     font-size: 14px;

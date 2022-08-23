@@ -52,7 +52,7 @@
 }
 
 
-.saveClientBtn{
+.btn.saveClientBtn{
     padding: 12px 35px;
     color: var(--color-white);
     background-color: var(--color-emerald);
@@ -70,7 +70,7 @@
     background-color: var(--color-emerald-lite);
 }
 
-.cancelModalBtn{
+.btn.cancelModalBtn{
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
