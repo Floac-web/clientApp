@@ -9,7 +9,7 @@
 .modal.active .modal__window{
     opacity: 1;
     z-index: 1000;
-    transform: translateY(20%);
+    transform: translateY(3%);
 }
 
 .modal.hide{

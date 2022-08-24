@@ -89,4 +89,20 @@
 } */
 
 
+@media  screen and (max-width: 500px){
+    .form__inputs{
+        padding: 0px 15px 0px 15px;
+    }
+    .form__floating{ 
+        padding: 15px 0px;
+    }
+    .form__inputs label{
+        top: 15px;
+    }
+    .form__input:focus~label,
+    .form__input:not(:placeholder-shown)~label {
+    transform: scale(.85) translate(-.25rem,-1.5rem);
+}
+}
+
 

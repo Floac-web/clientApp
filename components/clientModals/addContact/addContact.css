@@ -2,6 +2,14 @@
     background-color: var(--color-gray-suit3);
 }
 
+.addContact__forms{
+    padding: 0px;
+}
+
+.addContact__forms--contact{
+    padding: 16px 30px;
+}
+
 .addContact__item{
     padding: 8px 0px;
     width: 100%;
@@ -176,4 +184,40 @@
     line-height: 19px;
     color: var(--color-mine-shaft);
     transition: all .3s linear;
+}
+
+@media  screen and (max-width: 500px){
+    .addContact__forms--contact{
+        padding: 8px 15px;
+    }
+
+    .addContact__item{
+        padding: 4px 0px;
+    }
+
+    .btn.contact__cancelBtn{
+        height: 30px;
+        width: 20px;
+    }
+
+    .contact__input{
+        font-size: 12px;
+        padding: 4px 6px;
+    }
+
+    .btn.contact__nameBtn{
+        height: 30px;
+        width: 100px;
+        padding: 0px 6px;
+    }
+
+    
+    .contact__nameBtn::before{
+        top: 14px;
+    }
+
+    .list.contact__list{
+        top: 30px;
+        width: 100px;
+    }
 }

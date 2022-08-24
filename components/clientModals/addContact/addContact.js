@@ -78,13 +78,13 @@ export function addContactForm(baseType,TypeList){
     const checkContactInputList = () => {
         const listLength = contactInputList.childElementCount
         if(listLength == 0){
-            contactInputList.style.padding = "0px"
+            contactInputList.classList.remove("addContact__forms--contact")
         }
         else if(listLength > 3){
             addContactBtn.style.display = "none"
         }
         else if(listLength > 0){
-            contactInputList.style.padding = "16px 30px"
+            contactInputList.classList.add("addContact__forms--contact")
             addContactBtn.style.display = "flex"
         }
     }
