@@ -1,0 +1,56 @@
+
+
+
+
+.modal.active .modal__overfly{
+    z-index: 1000;
+    opacity: 1;
+}
+.modal.active .modal__window{
+    opacity: 1;
+    z-index: 1000;
+    /* transform: translateY(3%); */
+}
+
+.modal.hide{
+    display: none;
+}
+
+
+.modal__overfly{
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+
+    opacity: 0;
+
+    background: rgba(0, 0, 0, 0.5);
+    
+    transition: opacity .2s linear;
+}
+
+.modal__window{
+
+    position: relative;
+    margin: 0 auto;
+
+
+    width: 95%;
+    max-width: 450px;
+
+    /* transform: translateY(-100%); */
+    margin-top: 15px;
+
+    background: rgb(255, 255, 255);
+
+    transition: all .2s linear;
+    
+}
+
+
+
+
+
+

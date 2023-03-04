@@ -1,0 +1,108 @@
+
+
+.form__inputs{
+    padding: 0px 30px 0px 30px;
+}
+
+.form__inputs input{
+    width: 100%;
+    max-width: 390px;
+    padding: 4px 2px;
+    border-bottom: 1px solid var(--color-gray-suit);
+}
+
+.form__inputs input::placeholder{
+    color: var(--color-silver-chalise);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.form__inputs label{
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    color: var(--color-silver-chalice);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+
+    transition: transform .1s linear;
+}
+
+.form__required{
+    color: var(--color-emerald);
+}
+
+.form__floating{
+    position: relative;
+    padding: 25px 0px;
+}
+
+.form__input:focus~label,
+.form__input:not(:placeholder-shown)~label {
+    transform: scale(.85) translate(-.25rem,-1.5rem);
+}
+
+/* .addContact__block{
+    background-color: var(--color-gray-suit3);
+    display: flex;
+    justify-content: center;
+}
+
+.addContact__btn{
+    padding: 8px;
+    display: flex;
+}
+
+.addContact__btn-svg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.addContact__btn-svg svg{
+    fill: var(--color-emerald);
+    background-color: var(--color-gray-suit3);
+    border-radius: 19px;
+
+    transition: all .3s linear;
+}
+
+.addContact__block:hover svg{
+    fill: var(--color-white);
+    background-color: var(--color-emerald);
+
+}
+
+.addContact__block:hover .addContact__btn-title{
+    color: var(--color-emerald);
+}
+
+.addContact__btn-title{
+    padding-left: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: var(--color-mine-shaft);
+    transition: all .3s linear;
+} */
+
+
+@media  screen and (max-width: 500px){
+    .form__inputs{
+        padding: 0px 15px 0px 15px;
+    }
+    .form__floating{ 
+        padding: 15px 0px;
+    }
+    .form__inputs label{
+        top: 15px;
+    }
+    .form__input:focus~label,
+    .form__input:not(:placeholder-shown)~label {
+    transform: scale(.85) translate(-.25rem,-1.5rem);
+}
+}
+
+

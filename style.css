@@ -1,0 +1,115 @@
+@import "./plugins/modal/modal.css";
+@import "./components/table/table.css";
+@import "./utils/preloader/preloader.css";
+
+@import "./components/header/header.css";
+@import "./components/header/headerSearch/searchClient.css";
+@import "./components/clientModals/clientModal.css";
+@import "./components/clientModals/addClientModal/addClientModal.css";
+@import "./components/clientModals/addContact/addContact.css";
+@import "./components/clientModals/changeClientDataModal/changeClientDataModal.css";
+@import "./components/clientModals/deleteClientModal/deleteClientModal.css";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: var(--color-wild-sand);
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+p{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+input{
+    border: none;
+    outline: none;
+}
+
+.container{
+    width: 100%;
+    max-width: 1186px;
+    margin: 0 auto;
+}
+
+.list{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.btn{
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+}
+
+:root{
+    --color-white: #fff;
+    --color-wild-sand: #F5F5F5;
+    --color-mine-shaft: #333333;
+    --color-gray-suit: rgba(200,197,209,0.5);
+    --color-gray-suit10: rgb(200,197,209);
+    --color-gray-suit3: rgba(200,197,209,0.3);    
+    --color-silver-chalice: #B0B0B0; 
+    --color-emerald: #34C759;
+    --color-emerald-lite: rgba(52, 199, 89, 0.69);
+    --color-mischka: #E7E5EB;
+    --color-burnt-sienna: #F06A4D;
+    --color-athens-gray: #F4F3F6;
+}
+
+
+.tooltip{
+    position: absolute;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 7px 12px 8px;
+    color: var(--color-white);
+    background-color: var(--color-mine-shaft);
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s linear, visibility .3s linear;
+}
+
+.tooltip::before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -9px;
+    clip-path: polygon(100% 0, 0 0, 51% 100%);
+    background-color: var(--color-mine-shaft);
+
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--color-emerald);
+    border-radius: 5px;
+}

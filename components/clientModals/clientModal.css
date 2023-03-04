@@ -1,0 +1,90 @@
+
+.clientModal__header{
+    padding: 24px 30px 0px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.clientModal__header h2{
+    color: var(--color-mine-shaft);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.clientModal__header span{
+    color: var(--color-silver-chalice);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    padding-left: 9px;
+}
+
+.clientModal__closer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+    width: 40px;
+    height: 40px;
+    position: relative;
+    z-index: 1000;
+}
+
+.clientModal__txt{
+    margin: 11px auto;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: var(--color-mine-shaft);
+    width: 80%;
+    max-width: 275px;
+}
+
+.form__actionsBtns{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.btn.saveClientBtn{
+    padding: 12px 35px;
+    color: var(--color-white);
+    background-color: var(--color-emerald);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    cursor: pointer;
+}
+
+.saveClientBtn:hover{
+    background-color: var(--color-emerald-lite);
+}
+
+.saveClientBtn[disabled]{
+    background-color: var(--color-emerald-lite);
+}
+
+.btn.cancelModalBtn{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--color-mine-shaft);
+    border-bottom: 1px solid var(--color-mine-shaft);
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+@media  screen and (max-width: 500px){
+    .clientModal__header{
+        padding: 12px 15px 0px 15px;
+    }
+    .form__actionsBtns{
+        padding: 10px 15px 10px 15px;
+    }
+}

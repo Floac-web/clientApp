@@ -1,0 +1,223 @@
+.addContact__block{
+    background-color: var(--color-gray-suit3);
+}
+
+.addContact__forms{
+    padding: 0px;
+}
+
+.addContact__forms--contact{
+    padding: 16px 30px;
+}
+
+.addContact__item{
+    padding: 8px 0px;
+    width: 100%;
+    display: flex;
+
+}
+
+.contact__type{
+    position: relative;
+}
+
+.btn.contact__nameBtn{
+    text-align: left;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--color-mine-shaft);
+    width: 127px;
+    height: 37px;
+    position: relative;
+    z-index: 0;
+    padding: 10px 12px;
+    border: 1px solid var(--color-gray-suit10);
+    background-color: var(--color-mischka);
+    transition: background-color .1s linear;
+}
+
+.contact__nameBtn::before{
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    top: 16px;
+    right: 10px;
+    border-top: 1px solid var(--color-emerald);
+    border-right: 1px solid var(--color-emerald);
+    transform: rotate(-45deg);
+    transition: transform .1s linear;
+}
+
+.contact__nameBtn:hover{
+    background-color: var(--color-gray-suit10);
+}
+
+.contact__type-active::before{
+    transform: rotate(-225deg);
+}
+
+.list.contact__list{
+    cursor: pointer;
+    border: 1px solid var(--color-gray-suit10);
+    border-top: none;
+    position: absolute;
+    top: 37px;
+    left: 0px;
+    width: 127px;
+    opacity: 0;
+    z-index: 1000;
+    visibility: hidden;
+    padding: 5px 0px 5px 12px;
+    background-color: var(--color-athens-gray);
+
+    transition: opacity .1s linear, visibility .1s linear;
+}
+
+.contact__list.contact__list-active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.contact__list li{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--color-mine-shaft);
+    padding: 5px 0px;
+
+    transition: background-color .1s linear;
+}
+
+.contact__list li:hover{
+    background-color: var(--color-mischka);
+}
+
+.contact__input{
+    width: 100%;
+    max-width: 240px;
+    padding: 8px 12px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    border-top: 1px solid var(--color-gray-suit10);
+    border-bottom: 1px solid var(--color-gray-suit10);
+}
+
+.contact__input::placeholder{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.btn.contact__cancelBtn{
+    position: relative;
+    height: 37px;
+    width: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--color-gray-suit10);
+    background-color: var(--color-mischka);
+    transition: border .1s linear;
+}
+
+.cancelBtn__tooltip{
+    min-width: 150px;
+}
+
+.contact__cancelBtn svg{
+    fill: var(--color-silver-chalice);
+    transition: fill .1s linear;
+}
+
+.contact__cancelBtn:hover{
+    border-color: var(--color-burnt-sienna);
+}
+
+.contact__cancelBtn:hover .cancelBtn__tooltip{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.contact__cancelBtn:hover svg{
+    fill: var(--color-burnt-sienna);
+}
+
+
+.btn.addContact__btn{
+    margin: 0 auto;
+    padding: 8px;
+    display: flex;
+}
+
+.addContact__btn-svg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.addContact__btn-svg svg{
+    fill: var(--color-emerald);
+    background-color: var(--color-gray-suit3);
+    border-radius: 10px;
+
+    transition: all .3s linear;
+}
+
+.addContact__btn:hover svg{
+    fill: var(--color-white);
+    background-color: var(--color-emerald);
+
+}
+
+.addContact__btn:hover .addContact__btn-title{
+    color: var(--color-emerald);
+}
+
+.addContact__btn-title{
+    padding-left: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: var(--color-mine-shaft);
+    transition: all .3s linear;
+}
+
+@media  screen and (max-width: 500px){
+    .addContact__forms--contact{
+        padding: 8px 15px;
+    }
+
+    .addContact__item{
+        padding: 4px 0px;
+    }
+
+    .btn.contact__cancelBtn{
+        height: 30px;
+        width: 20px;
+    }
+
+    .contact__input{
+        font-size: 12px;
+        padding: 4px 6px;
+    }
+
+    .btn.contact__nameBtn{
+        height: 30px;
+        width: 100px;
+        padding: 0px 6px;
+    }
+
+    
+    .contact__nameBtn::before{
+        top: 14px;
+    }
+
+    .list.contact__list{
+        top: 30px;
+        width: 100px;
+    }
+}

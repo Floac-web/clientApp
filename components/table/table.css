@@ -1,0 +1,262 @@
+
+
+
+
+.clients{
+    margin-top: 250px;
+}
+
+
+table{
+    width: 300px;
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+caption{
+    text-align: left;
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--color-mine-shaft);
+    padding: 20px 0px;
+}
+
+thead{
+    cursor: pointer;
+    user-select: none;
+}
+
+thead th{
+    text-align: left;
+    padding: 8px 20px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--color-silver-chalice);
+}
+
+.table__sorting{
+    padding-left: 12px; 
+    position: relative;
+    z-index: -100;
+    text-transform: uppercase;
+    color: var(--color-emerald);
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 14px;
+}
+
+.table__sorting::after{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 4px;
+    top: 5px;
+    width: 5px;
+    height: 5px;
+    border-top: 1px solid var(--color-emerald);
+    border-right: 1px solid var(--color-emerald);
+
+    transform: rotate(-45deg);
+    transition: all .1s linear;
+}
+
+.table__sorting::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 6px;
+    top: 5px;
+    left: 6px;
+    background: var(--color-emerald);
+
+    transition: all .1s linear;
+}
+
+.sorting-down .table__sorting::before{
+    transform: rotate(-180deg);
+}
+
+.sorting-down .table__sorting::after{
+    transform: rotate(-225deg);
+}
+
+
+thead th:first-child .table__sorting{
+    padding-left: 0px;
+    font-size: 12px;
+}
+
+thead th:first-child .table__sorting::after{
+    left: 16px;
+}
+
+thead th:first-child .table__sorting::before{
+    left: 18px;
+}
+
+tbody{
+    /* position: relative; */
+    z-index: -1000;
+    color: var(--color-mine-shaft);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+tbody tr{
+    background-color: var(--color-white);
+    border-bottom: 1px solid var(--color-gray-suit);
+
+    transition: border-color .1s linear;
+
+}
+
+tbody tr.active{
+    border-color: var(--color-emerald);
+}
+
+tbody td:first-child{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--color-silver-chalice);
+}
+
+tbody td{
+    padding: 20px;
+}
+
+
+
+.table__createData, .table__changeData{
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.table__createTime, .table__changeTime{
+    color: var(--color-silver-chalice);
+}
+
+tbody td button{
+    display: flex;
+    flex-direction: row;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: var(--color-mine-shaft);
+    transition: color .2s linear;
+}
+
+.changeBtn__svg, .deleteBtn__svg{
+    display: flex;
+    margin-right: 2px;
+}
+
+.changeBtn__svg svg, .deleteBtn__svg svg{
+    align-self: center;
+}
+
+.table__changeBtn:hover{
+    color: var(--color-emerald);
+}
+
+.table__deleteBtn:hover{
+    color: var(--color-burnt-sienna);
+}
+
+
+/* client button */
+
+.clients__form{
+    text-align: center;
+}
+
+.clients__form{
+    padding: 45px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn.clients__btn{
+    border: 1px solid var(--color-emerald);
+    color: var(--color-emerald);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px 26px;
+    display: flex;
+    flex-direction: row;
+
+    transition: all .2s linear;
+}
+
+.clients__btn svg{
+    fill: var(--color-emerald);
+    transition: all .2s linear;
+}
+
+.clients__btn-title{
+    padding-left: 10px;
+}
+
+.clients__btn:hover{
+    color: var(--color-white);
+    background: var(--color-emerald);
+}
+
+.clients__btn:hover svg{
+    fill: var(--color-white);
+}
+
+
+.contact__link{
+    cursor: pointer;
+    position: relative;
+}
+
+.contact__link svg{
+    transition: transform .2s linear;
+}
+
+.contact__link.active svg{
+    transform: rotate(180deg);
+}
+
+.contact__tooltip{
+    left: 8px;
+    top: -40px;
+    
+}
+
+.contact__link:hover .contact__tooltip{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+@media  screen and (max-width: 1200px){
+    .clients__container{
+        padding: 0px 15px 0px 15px;
+    }
+}
+
+
+@media  screen and (max-width: 950px){
+
+    .clients__table-container{
+        
+        overflow-x: scroll;
+    }
+}
+
+
+
+
+
+
+
+
+
