@@ -23,7 +23,7 @@ function renderContactInput(baseType,contactTypesHtml, contactValue){
         ${contactTypesHtml}
     </ul>
     </div>
-    <input type="text" class="contact__input" placeholder="Введите данные контакта" maxlength="12"
+    <input type="text" class="contact__input" placeholder="Введіть дані контакту" maxlength="12"
     value="${contactValue || ""}">
     <button class="contact__cancelBtn btn"><span class="cancelBtn__tooltip tooltip">Видалити контакт</span><span>${deleteContactSvg}
     </span></button>    
@@ -70,7 +70,7 @@ export function addContactForm(baseType,TypeList){
 
     const addContactBtn = document.createElement("button")
     addContactBtn.classList.add("addContact__btn", "btn")
-    addContactBtn.innerHTML = `<span class="addContact__btn-svg">${addContactSvg}</span><span class="addContact__btn-title">Добавить контакт</span>`
+    addContactBtn.innerHTML = `<span class="addContact__btn-svg">${addContactSvg}</span><span class="addContact__btn-title">Додати контакт</span>`
 
     addContact.append(addContactBtn)
     addContact.prepend(contactInputList)

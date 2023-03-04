@@ -176,11 +176,11 @@ export function createClientsTable(clients){
         <thead>
         <tr>
             <th data-type="id"><span class="table__sorting">id</span></th>
-            <th data-type="txt">Фамилия Имя Отчество <span class="table__sorting">а-я</span></th>
-            <th data-type="create" class="sorting-down">Дата и время создания <span class="table__sorting"></span></th>
-            <th data-type="change">Последние изменения <span class="table__sorting"></span></th>
-            <th>Контакты</th>
-            <th>Действия</th>
+            <th data-type="txt">Фамілія Ім'я по Батькові<span class="table__sorting">а-я</span></th>
+            <th data-type="create" class="sorting-down">Дата і час створення <span class="table__sorting"></span></th>
+            <th data-type="change">Останні зміни <span class="table__sorting"></span></th>
+            <th>Контакти</th>
+            <th>Дії</th>
             <th></th>
         </tr>
         </thead>
@@ -197,7 +197,7 @@ export function createClientsTable(clients){
 
     clientsContainer.insertAdjacentHTML("beforeend", `
         <form action="" class="clients__form form">
-        <button class="clients__btn btn"><span class="clients__btn-svg">${addUserSvg}</span><span class="clients__btn-title">Добавить клиента</span></button>
+        <button class="clients__btn btn"><span class="clients__btn-svg">${addUserSvg}</span><span class="clients__btn-title">Додати клієнта</span></button>
         </form>
     `)
 
