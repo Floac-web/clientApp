@@ -13,14 +13,15 @@ const clientTable = createClientsTable()
 document.body.append(createHeader() , clientTable.clientsNode)
 
 const response = await firebaseGetItem(DATA__BASE__CLIENT__URL)
+clientTable.removePreloader();
 
-
-const clientListObj = Object.keys(response).map(key => ({
-        ...response[key],
+if(response){
+  const clientListObj = Object.keys(response).map(key => ({
+      ...response[key],
         serveId: key
 }))
 
-clientTable.removePreloader();
+
     searchClient(clienttListObj)
     clienttListObj.forEach(clientObject =>{
         clientTable.addClient(clientObject)
@@ -34,6 +35,9 @@ clientTable.removePreloader();
             e.preventDefault()
         })
     })
+}
+
+
 
 
 document.addEventListener("DOMContentLoaded", () => {
