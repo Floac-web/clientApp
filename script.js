@@ -22,8 +22,8 @@ if(response){
 }))
 
 
-    searchClient(clienttListObj)
-    clienttListObj.forEach(clientObject =>{
+    searchClient(clientListObj)
+    clientListObj.forEach(clientObject =>{
         clientTable.addClient(clientObject)
     })
     
