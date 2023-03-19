@@ -12,21 +12,21 @@ import { searchClient } from "./components/header/headerSearch/searchClient.js";
 const clientTable = createClientsTable()
 document.body.append(createHeader() , clientTable.clientsNode)
 
-firebaseGetItem(DATA__BASE__CLIENT__URL)
-.then(response => {
+const response = await firebaseGetItem(DATA__BASE__CLIENT__URL)
 
-    return Object.keys(response).map(key => ({
+
+const clientListObj = Object.keys(response).map(key => ({
         ...response[key],
         serveId: key
-    }))
-}).then(clienttListObj => {
-    clientTable.removePreloader();
+}))
+
+clientTable.removePreloader();
     searchClient(clienttListObj)
     clienttListObj.forEach(clientObject =>{
         clientTable.addClient(clientObject)
     })
     
-}).then(() =>{
+
     const contactLinks = document.querySelectorAll(".contact__link")
 
     contactLinks.forEach(contactLink =>{
@@ -34,7 +34,7 @@ firebaseGetItem(DATA__BASE__CLIENT__URL)
             e.preventDefault()
         })
     })
-})
+
 
 document.addEventListener("DOMContentLoaded", () => {
     sortTable()
